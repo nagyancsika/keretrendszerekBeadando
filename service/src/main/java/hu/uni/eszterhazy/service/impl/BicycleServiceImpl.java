@@ -62,7 +62,8 @@ public class BicycleServiceImpl implements BicycleService {
         Collection<Bicycle> bicycles = listAllBicycles();
         Collection<Bicycle> result = new ArrayList<Bicycle>();
         for (Bicycle b : bicycles) {
-            if(b.getColor()==color) {
+            String bColor = b.getColor().toString();
+            if(bColor.equals(color)) {
                 result.add(b);
             }
         }

@@ -36,7 +36,7 @@ public class Bicycle {
     }
 
     public void setID(String ID) throws IDNotMatching {
-        if(!ID.matches("([A-Z]|[a-z]|\\d){17}")){
+        if(!ID.matches("([A-Z]|[a-z]|\\d){3}")){
             throw new IDNotMatching(ID);
         }
         this.ID = ID;

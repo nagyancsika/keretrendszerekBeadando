@@ -48,7 +48,7 @@ public class BicycleController {
         return "New Bicycle added: "+bicycle.getID();
     }
 
-    @RequestMapping(value = "/bicycle/{ID:[A-Za-z0-9]{17}}")
+    @RequestMapping(value = "/bicycle/{ID:[A-Za-z0-9]{3}}")
     @ResponseBody
     public Bicycle getBicycleByID(@PathVariable String ID) throws IOException, BicycleNotFound {
         
@@ -71,7 +71,7 @@ public class BicycleController {
         return service.getBicyclesBetweenYears(fromYear,toYear);
     }
 
-    @RequestMapping(value = "/listBicycles/{color}")
+    @RequestMapping(value = "/listBicyclesByColor/{color}")
     @ResponseBody
     public Collection<Bicycle> getBicyclesByColorPath(
             @PathVariable String color

@@ -1,0 +1,3 @@
+[{"brake":"VBRAKES","brand":"Teszt","frame":"teszt","pedals":"FLAT","color":"red","broken":false,"year_of_maufacturing":2017,"id":"abc"},
+{"brake":"DISCBRAKES","brand":"Teszt","frame":"teszt","pedals":"CRANK","color":"blue","broken":false,"year_of_maufacturing":2014,"id":"dgf"},
+{"brake":"DISCBRAKES","brand":"Teszt","frame":"teszt","pedals":"CRANK","color":"red","broken":false,"year_of_maufacturing":2019,"id":"ijk"}]
